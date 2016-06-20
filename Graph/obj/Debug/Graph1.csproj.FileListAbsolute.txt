@@ -1,0 +1,16 @@
+C:\Users\Max\Documents\Visual Studio 2013\Projects\СompGraph\Graph\bin\Debug\Graph.exe.config
+C:\Users\Max\Documents\Visual Studio 2013\Projects\СompGraph\Graph\bin\Debug\Graph.exe
+C:\Users\Max\Documents\Visual Studio 2013\Projects\СompGraph\Graph\bin\Debug\Graph.pdb
+C:\Users\Max\Documents\Visual Studio 2013\Projects\СompGraph\Graph\bin\Debug\WriteableBitmapEx.Wpf.dll
+C:\Users\Max\Documents\Visual Studio 2013\Projects\СompGraph\Graph\bin\Debug\WriteableBitmapEx.Wpf.pdb
+C:\Users\Max\Documents\Visual Studio 2013\Projects\СompGraph\Graph\bin\Debug\WriteableBitmapEx.Wpf.xml
+C:\Users\Max\Documents\Visual Studio 2013\Projects\СompGraph\Graph\obj\Debug\MainWindow.baml
+C:\Users\Max\Documents\Visual Studio 2013\Projects\СompGraph\Graph\obj\Debug\MainWindow.g.cs
+C:\Users\Max\Documents\Visual Studio 2013\Projects\СompGraph\Graph\obj\Debug\App.g.cs
+C:\Users\Max\Documents\Visual Studio 2013\Projects\СompGraph\Graph\obj\Debug\Graph_MarkupCompile.cache
+C:\Users\Max\Documents\Visual Studio 2013\Projects\СompGraph\Graph\obj\Debug\Graph.g.resources
+C:\Users\Max\Documents\Visual Studio 2013\Projects\СompGraph\Graph\obj\Debug\Graph.Properties.Resources.resources
+C:\Users\Max\Documents\Visual Studio 2013\Projects\СompGraph\Graph\obj\Debug\Graph1.csproj.GenerateResource.Cache
+C:\Users\Max\Documents\Visual Studio 2013\Projects\СompGraph\Graph\obj\Debug\Graph.exe
+C:\Users\Max\Documents\Visual Studio 2013\Projects\СompGraph\Graph\obj\Debug\Graph.pdb
+C:\Users\Max\Documents\Visual Studio 2013\Projects\СompGraph\Graph\obj\Debug\Graph1.csprojResolveAssemblyReference.cache

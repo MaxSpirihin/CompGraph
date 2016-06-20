@@ -1,0 +1,18 @@
+﻿<Window x:Class="HW1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="HW1" Height="170.667" Width="180">
+    <StackPanel DockPanel.Dock="Top" Margin="1,0,10.333,0" Height="344" VerticalAlignment="Top">
+        <StackPanel Name="PolygonTask" Margin="0,5,0,0"  >
+            <TextBlock Margin="10,5,10.333,0" Height="18">Choose The Task:</TextBlock>
+            <ComboBox Name="CMBTask" Margin="10,0,10.333,20" SelectionChanged="CMBTask_SelectionChanged">
+                <ComboBoxItem IsSelected="True">1 - Bezier</ComboBoxItem>
+                <ComboBoxItem>2 - Ermite</ComboBoxItem>
+                <ComboBoxItem>3 - Clip Line</ComboBoxItem>
+                <ComboBoxItem>4 - Weiler-Atherton</ComboBoxItem>
+            </ComboBox>
+            <Button Content="" Name="BTNEnter" Margin="10,4,10.667,0" Height="23" Click="BTNEnter_Click" />
+            <Button Content="Clear Info" Name="BTNClear" Margin="10,4,10.667,0" Height="23" Click="BTNClear_Click" />
+        </StackPanel>
+    </StackPanel>
+</Window>

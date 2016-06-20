@@ -1,0 +1,69 @@
+﻿<Window x:Class="Lab1Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lab1" Height="420" Width="180"
+        MinWidth="180" MaxWidth="180" MinHeight="420" MaxHeight="420">
+    <StackPanel DockPanel.Dock="Top" Margin="1,0,10,-2.667">
+
+        <TextBlock Margin="10,5,10.333,0" Height="18">Choose The Task:</TextBlock>
+        <ComboBox Name="CMBTask" Margin="10,0,10.333,0" SelectionChanged="CMBTask_SelectionChanged">
+            <ComboBoxItem IsSelected="True">1 - Line Drawing</ComboBoxItem>
+            <ComboBoxItem>2 - Polygon Drawing</ComboBoxItem>
+        </ComboBox>
+
+        <StackPanel Name="LineTask" Margin="0,5,0,0" Visibility="Collapsed">
+            <CheckBox Name="CBComplicatedLine"  Content="Complicated Line" Margin="10,2,10.333,0" Checked="LineCBChange" Unchecked="LineCBChange"/>
+            <CheckBox Name="CBDashedLine"  Content="Dashed Line" Margin="10,2,10.333,0"  Checked="LineCBChange" Unchecked="LineCBChange"/>
+            <TextBlock Margin="10,4,10.333,0" Height="18" Name="TBLineCap">
+                LineCap:
+            </TextBlock>
+            <ComboBox Name="CMBCap" Margin="10,0,10.333,0" SelectionChanged="CMBCap_Selected" IsEnabled="False">
+                <ComboBoxItem IsSelected="True">Flap</ComboBoxItem>
+                <ComboBoxItem>Round</ComboBoxItem>
+                <ComboBoxItem>Square</ComboBoxItem>
+            </ComboBox>
+            <DockPanel Margin="10 4 10 0" LastChildFill="False">
+                <TextBlock Text="Width:"  VerticalAlignment="Center" DockPanel.Dock="Left"/>
+                <TextBox Name="TBWidth" IsReadOnly="True" DockPanel.Dock="Right">1</TextBox>
+                <Slider Name="SLWidth" Height="26" DockPanel.Dock="Left" Width="72" Maximum="20" Minimum="1" Value="1" IsSnapToTickEnabled="True" TickFrequency="1" Margin="4 0  0 0" IsEnabled="False" ValueChanged="SLWidth_ValueChanged"/>
+            </DockPanel>
+
+            <GroupBox Header="Info" Margin="5,0,5.333,0">
+                <TextBlock TextWrapping="Wrap" Height="185" Margin="0,0,0.667,0">Choose parameters of line and enter to points on the field. A segment connecting two points will be builded. Also you can add test lines.</TextBlock>
+            </GroupBox>
+
+        </StackPanel>
+
+        <StackPanel Name="PolygonTask" Margin="0,5,0,0"  >
+            <Button Content="Start Entering" Name="BTNStartEnter" Margin="10,4,10.667,0" Height="23" Click="BTNStartEnter_Click" />
+            <TextBlock Margin="10,4,10.333,0" Height="18" Name="TBPointsCount" >
+                Points count - none.
+            </TextBlock>
+            <Button Content="Stroke" Name="BTNStroke" Margin="10,4,10.667,0" Height="23" Click="BTNStroke_Click" />
+            <DockPanel Margin="10,4,-11.333,0">
+                <Button Content="FillEO" Name="BTNFillEO" DockPanel.Dock="Left"  Height="23" Width="54" Click="BTNFill_Click" />
+                <Button Content="FillNZW" Name="BTNFillNZW" DockPanel.Dock="Right"  Height="23" Width="64" Click="BTNFillNZW_Click" />
+            </DockPanel>
+            <TextBlock Margin="10,4,10.333,0" Height="18" Name="TBType" TextWrapping="Wrap">
+
+            </TextBlock>
+            <TextBlock Margin="10,5,10.333,0" Height="18">Test Polygons:</TextBlock>
+            <ComboBox Name="CMBTestPol" Margin="10,0,10.333,0" SelectionChanged="CMBTask_SelectionChanged">
+                <ComboBoxItem IsSelected="True">1 - Triangle</ComboBoxItem>
+                <ComboBoxItem>2 - Non Convex</ComboBoxItem>
+                <ComboBoxItem>3 - Complicated</ComboBoxItem>
+                <ComboBoxItem>4 - Star</ComboBoxItem>
+                <ComboBoxItem>5 - EO vs NZW</ComboBoxItem>
+            </ComboBox>
+            <Button Content="Enter Test Polygon" Name="BTNTestEnter" Margin="10,4,10.667,0" Height="23" Click="BTNTestEnter_Click"/>
+
+            <GroupBox Header="Info" Margin="5,0,5.333,0">
+                <TextBlock TextWrapping="Wrap" Height="114" Margin="0,0,0.667,0">Press "Start entering". Put some points to the field. After that press "Stroke" or "Fill". 
+                You will see your polygon and their charachteristics. Or choose test data.</TextBlock>
+            </GroupBox>
+
+        </StackPanel>
+
+
+    </StackPanel>
+</Window>
